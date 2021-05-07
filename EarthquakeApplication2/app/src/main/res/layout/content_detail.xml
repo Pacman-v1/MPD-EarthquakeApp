@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Student Name: Timothy Mulindwa Student ID: S1903348 -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailActivity.DetailActivity"
+    android:background="#009688"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titleDetailTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="5dp"
+                        android:minLines="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/teal_700"
+                        android:text="Title"/>
+                    <TextView
+                        android:id="@+id/dateDetailTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:padding="5dp"
+                        android:minLines="1"
+                        android:text="Date"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/guidDetailTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:minLines="1"
+                android:text="Guid" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/linkDetailTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:padding="5dp"
+                    android:textColor="@color/teal_700"
+                    android:textStyle="italic"
+                    android:text="Link" />
+
+                <TextView
+                    android:id="@+id/descDetailTxt"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:padding="5dp"
+                    android:textColor="#0f0f0f"
+                    android:minLines="6"
+                    android:text="John Doe joined this company on January May 1995 beforesome of you were born.He's been with us through thick and thin.When he came for the first time,he was naive and nervous."/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
